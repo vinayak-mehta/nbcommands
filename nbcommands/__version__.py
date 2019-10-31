@@ -14,7 +14,7 @@ def generate_version(version, prerelease=None, revision=None):
     return "".join(version_parts)
 
 
-__title__ = "nbshell"
+__title__ = "nbcommands"
 __description__ = "Shell commands for Jupyter notebooks!"
 __url__ = "https://github.com/vinayak-mehta/nbshell"
 __version__ = generate_version(VERSION, prerelease=PRERELEASE, revision=REVISION)

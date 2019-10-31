@@ -1,6 +1,6 @@
 # Contributor's Guide
 
-If you're reading this, you're probably looking to contribute to nbshell. *Time is the only real currency*, and the fact that you're considering spending some here is *very* generous of you. Thank you very much!
+If you're reading this, you're probably looking to contribute to nbcommands. *Time is the only real currency*, and the fact that you're considering spending some here is *very* generous of you. Thank you very much!
 
 This document will help you get started with contributing code, testing (future) and filing issues. If you have any questions, feel free to reach out to [Vinayak Mehta](https://vinayak-mehta.github.io), the author and maintainer.
 
@@ -14,7 +14,7 @@ As the [Requests Code Of Conduct](https://github.com/psf/requests/blob/master/CO
 
 ## Your first contribution
 
-A great way to start contributing to nbshell is to pick an issue with the [good first issue](https://github.com/vinayak-mehta/nbshell/labels/good%20first%20issue) label. If you're unable to find a good first issue, feel free to contact the maintainer.
+A great way to start contributing to nbcommands is to pick an issue with the [good first issue](https://github.com/vinayak-mehta/nbcommands/labels/good%20first%20issue) label. If you're unable to find a good first issue, feel free to contact the maintainer.
 
 ## Setting up a development environment
 
@@ -34,14 +34,14 @@ $ pip install ".[dev]"
 
 ### Submit a pull request
 
-The preferred workflow for contributing to nbshell is to fork the [project repository](https://github.com/vinayak-mehta/nbshell) on GitHub, clone, develop on a branch and then finally submit a pull request. Here are the steps:
+The preferred workflow for contributing to nbcommands is to fork the [project repository](https://github.com/vinayak-mehta/nbcommands) on GitHub, clone, develop on a branch and then finally submit a pull request. Here are the steps:
 
 1. Fork the project repository. Click on the ‘Fork’ button near the top of the page. This creates a copy of the code under your account on the GitHub.
 
-2. Clone your fork of nbshell from your GitHub account:
+2. Clone your fork of nbcommands from your GitHub account:
 
 <pre>
-$ git clone https://www.github.com/[username]/nbshell
+$ git clone https://www.github.com/[username]/nbcommands
 </pre>
 
 3. Create a branch to hold your changes:
@@ -67,7 +67,7 @@ $ git commit
 $ git push -u origin my-feature
 </pre>
 
-Now it's time to go to the your fork of nbshell and create a pull request! You can [follow these instructions](https://help.github.com/articles/creating-a-pull-request-from-a-fork/) to do this.
+Now it's time to go to the your fork of nbcommands and create a pull request! You can [follow these instructions](https://help.github.com/articles/creating-a-pull-request-from-a-fork/) to do this.
 
 ### Work on your pull request
 
@@ -86,7 +86,7 @@ It is recommended that your pull request complies with the following rules:
 
 - Please prefix the title of your pull request with [MRG] (Ready for Merge), if the contribution is complete and ready for a detailed review. An incomplete pull request's title should be prefixed with [WIP] (to indicate a work in progress), and changed to [MRG] when it's complete. A good [task list](https://blog.github.com/2013-01-09-task-lists-in-gfm-issues-pulls-comments/) in the PR description will ensure that other people get a better idea of what it proposes to do, which will also increase collaboration.
 
-- If contributing new functionality, make sure that you add a unit test for it, while making sure that all previous tests pass. nbshell uses [pytest](https://docs.pytest.org/en/latest/) for testing (future). Tests can be run using:
+- If contributing new functionality, make sure that you add a unit test for it, while making sure that all previous tests pass. nbcommands uses [pytest](https://docs.pytest.org/en/latest/) for testing (future). Tests can be run using:
 
 <pre>
 $ python setup.py test
@@ -94,7 +94,7 @@ $ python setup.py test
 
 ## Filing Issues
 
-[GitHub issues](https://github.com/vinayak-mehta/nbshell/issues) are used to keep track of all issues and pull requests. Before opening an issue (which asks a question or reports a bug), please use GitHub search to look for existing issues (both open and closed) that may be similar.
+[GitHub issues](https://github.com/vinayak-mehta/nbcommands/issues) are used to keep track of all issues and pull requests. Before opening an issue (which asks a question or reports a bug), please use GitHub search to look for existing issues (both open and closed) that may be similar.
 
 ### Bug Reports
 
