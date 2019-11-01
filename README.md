@@ -1,5 +1,7 @@
 # nbcommands
 
+[![image](https://img.shields.io/pypi/v/nbcommands.svg)](https://pypi.org/project/nbcommands/) [![image](https://img.shields.io/pypi/pyversions/nbcommands.svg)](https://pypi.org/project/nbcommands/) [![image](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+
 nbcommands bring the goodness of Unix commands to Jupyter notebooks.
 
 ## Installation
