@@ -16,7 +16,7 @@ from .terminal import display
 @click.pass_context
 def cat(ctx, *args, **kwargs):
     """Concatenate Jupyter notebooks to standard output."""
-    # https://github.com/jupyter/nbdime
+    # Source: https://github.com/jbn/nbmerge
     merged, metadata = None, []
 
     for file in kwargs["file"]:

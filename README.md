@@ -58,6 +58,12 @@ nbcommands gives you the following commands to interact with your Jupyter notebo
     <pre>
     $ nbcat notebook1.ipynb notebook2.ipynb -o notebook3.ipynb</pre>
 
+- `nbblack`: Blacken Jupyter notebooks.
+
+    <pre>
+    $ nbblack notebook1.ipynb notebook2.ipynb</pre>
+    ![nbblack](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbblack.png)
+
 Future enhancements:
 
 - `nbblack`: Blacken each cell in Jupyter notebooks.
