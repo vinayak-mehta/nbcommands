@@ -14,29 +14,29 @@ $ pip install nbcommands
 
 ## Features
 
-- nbtouch: Update the access and modification times of each Jupyter notebook to the current time.
+- `nbtouch`: Update the access and modification times of each Jupyter notebook to the current time.
 
     <pre>
     $ nbtouch notebook1.ipynb notebook2.ipynb</pre>
 
-- nbgrep: Search for a pattern in Jupyter notebooks.
+- `nbgrep`: Search for a pattern in Jupyter notebooks.
 
     <pre>
     $ nbgrep "import os" notebook.ipynb</pre>
 
-- nbhead: Print the first 5 cells of a Jupyter notebook to standard output.
+- `nbhead`: Print the first 5 cells of a Jupyter notebook to standard output.
 
     <pre>
     $ nbhead notebook.ipynb
     $ nbhead -n 10 notebook.ipynb</pre>
 
-- nbtail: Print the last 5 cells of a Jupyter notebook to standard output.
+- `nbtail`: Print the last 5 cells of a Jupyter notebook to standard output.
 
     <pre>
     $ nbtail notebook.ipynb
     $ nbtail -n 10 notebook.ipynb</pre>
 
-- nbcat: Concatenate Jupyter notebooks to standard output.
+- `nbcat`: Concatenate Jupyter notebooks to standard output.
 
     <pre>
     $ nbcat notebook.ipynb
