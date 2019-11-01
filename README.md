@@ -20,19 +20,19 @@ nbcommands gives you the following commands to interact with your Jupyter notebo
 
     <pre>
     $ nbtouch notebook1.ipynb notebook2.ipynb</pre>
-    ![nbtouch](https://github.com/vinayak-mehta/nbcommands/blob/master/docs/_static/nbtouch.png)
+    ![nbtouch](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbtouch.png)
 
 - `nbgrep`: Search for a pattern in Jupyter notebooks.
 
     <pre>
     $ nbgrep "os" notebook.ipynb</pre>
-    ![nbgrep](https://github.com/vinayak-mehta/nbcommands/blob/master/docs/_static/nbgrep.png)
+    ![nbgrep](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbgrep.png)
 
 - `nbhead`: Print the first 5 cells of a Jupyter notebook to standard output.
 
     <pre>
     $ nbhead notebook.ipynb</pre>
-    ![nbhead](https://github.com/vinayak-mehta/nbcommands/blob/master/docs/_static/nbhead.png)
+    ![nbhead](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbhead.png)
 
     Note: You can also specify the number of cells you want to print using the `-n` option.
     <pre>
@@ -42,7 +42,7 @@ nbcommands gives you the following commands to interact with your Jupyter notebo
 
     <pre>
     $ nbtail notebook.ipynb</pre>
-    ![nbtail](https://github.com/vinayak-mehta/nbcommands/blob/master/docs/_static/nbtail.png)
+    ![nbtail](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbtail.png)
 
     Note: You can also specify the number of cells you want to print using the `-n` option.
     <pre>
@@ -52,7 +52,7 @@ nbcommands gives you the following commands to interact with your Jupyter notebo
 
     <pre>
     $ nbcat notebook.ipynb notebook2.ipynb</pre>
-    ![nbcat](https://github.com/vinayak-mehta/nbcommands/blob/master/docs/_static/nbcat.png)
+    ![nbcat](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbcat.png)
 
     Note: You can create a new notebook by concatenating multiple notebooks using the `-o` option.
     <pre>
@@ -73,4 +73,4 @@ nbcommands uses [Semantic Versioning](https://semver.org/). For the available ve
 
 ## License
 
-This project is licensed under the Apache License, see the [LICENSE](https://github.com/vinayak-mehta/nbcommands/blob/master/LICENSE) file for details.
+This project is licensed under the Apache License, see the [LICENSE](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/LICENSE) file for details.
