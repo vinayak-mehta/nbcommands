@@ -1,9 +1,5 @@
 # nbcommands
 
-Unix commands for Jupyter notebooks!
-
-## Why nbcommands?
-
 nbcommands bring the goodness of Unix commands to Jupyter notebooks.
 
 ## Installation
@@ -31,23 +27,32 @@ $ pip install nbcommands
 - `nbhead`: Print the first 5 cells of a Jupyter notebook to standard output.
 
     <pre>
-    $ nbhead notebook.ipynb
-    $ nbhead -n 10 notebook.ipynb</pre>
+    $ nbhead notebook.ipynb</pre>
     ![nbhead](docs/_static/nbhead.png)
+
+    Note: You can also specify the number of cells you want to print using the `-n` option.
+    <pre>
+    $ nbhead -n 10 notebook.ipynb</pre>
 
 - `nbtail`: Print the last 5 cells of a Jupyter notebook to standard output.
 
     <pre>
-    $ nbtail notebook.ipynb
-    $ nbtail -n 10 notebook.ipynb</pre>
+    $ nbtail notebook.ipynb</pre>
     ![nbtail](docs/_static/nbtail.png)
+
+    Note: You can also specify the number of cells you want to print using the `-n` option.
+    <pre>
+    $ nbtail -n 10 notebook.ipynb</pre>
 
 - `nbcat`: Concatenate Jupyter notebooks to standard output.
 
     <pre>
-    $ nbcat notebook.ipynb
-    $ nbcat notebook1.ipynb notebook2.ipynb -o notebook3.ipynb</pre>
+    $ nbcat notebook.ipynb notebook2.ipynb</pre>
     ![nbcat](docs/_static/nbcat.png)
+
+    Note: You can create a new notebook by concatenating multiple notebooks using the `-o` option.
+    <pre>
+    $ nbcat notebook1.ipynb notebook2.ipynb -o notebook3.ipynb</pre>
 
 Future enhancements:
 
