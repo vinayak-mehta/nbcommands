@@ -52,6 +52,7 @@ def _black(ctx, *args, **kwargs):
                     black_flag = True
 
         if black_flag:
+            click.echo("reformatted {}".format(file))
             black_file_count += 1
 
         with open(file, "w") as f:
