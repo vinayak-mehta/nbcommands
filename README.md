@@ -14,7 +14,7 @@ $ pip install nbcommands
 
 ## Usage
 
-nbcommands gives you the following commands to interact with your Jupyter notebooks.
+nbcommands gives you the following commands to interact with your Jupyter notebooks without spinning up a notebook server.
 
 - `nbtouch`: Update the access and modification times of each Jupyter notebook to the current time.
 
