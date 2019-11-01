@@ -20,19 +20,19 @@ nbcommands gives you the following commands to interact with your Jupyter notebo
 
     <pre>
     $ nbtouch notebook1.ipynb notebook2.ipynb</pre>
-    ![nbtouch](docs/_static/nbtouch.png)
+    ![nbtouch](https://github.com/vinayak-mehta/nbcommands/blob/master/docs/_static/nbtouch.png)
 
 - `nbgrep`: Search for a pattern in Jupyter notebooks.
 
     <pre>
     $ nbgrep "os" notebook.ipynb</pre>
-    ![nbgrep](docs/_static/nbgrep.png)
+    ![nbgrep](https://github.com/vinayak-mehta/nbcommands/blob/master/docs/_static/nbgrep.png)
 
 - `nbhead`: Print the first 5 cells of a Jupyter notebook to standard output.
 
     <pre>
     $ nbhead notebook.ipynb</pre>
-    ![nbhead](docs/_static/nbhead.png)
+    ![nbhead](https://github.com/vinayak-mehta/nbcommands/blob/master/docs/_static/nbhead.png)
 
     Note: You can also specify the number of cells you want to print using the `-n` option.
     <pre>
@@ -42,7 +42,7 @@ nbcommands gives you the following commands to interact with your Jupyter notebo
 
     <pre>
     $ nbtail notebook.ipynb</pre>
-    ![nbtail](docs/_static/nbtail.png)
+    ![nbtail](https://github.com/vinayak-mehta/nbcommands/blob/master/docs/_static/nbtail.png)
 
     Note: You can also specify the number of cells you want to print using the `-n` option.
     <pre>
@@ -52,7 +52,7 @@ nbcommands gives you the following commands to interact with your Jupyter notebo
 
     <pre>
     $ nbcat notebook.ipynb notebook2.ipynb</pre>
-    ![nbcat](docs/_static/nbcat.png)
+    ![nbcat](https://github.com/vinayak-mehta/nbcommands/blob/master/docs/_static/nbcat.png)
 
     Note: You can create a new notebook by concatenating multiple notebooks using the `-o` option.
     <pre>
