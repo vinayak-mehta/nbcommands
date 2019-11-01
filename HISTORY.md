@@ -4,6 +4,13 @@ Release History
 master
 ------
 
+0.2.2 (2019-11-01)
+------------------
+
+<pre>
+HTTPError: 400 Client Error: This filename has already been used, use a different version. See https://pypi.org/help/#file-name-reuse for url: https://upload.pypi.org/legacy/
+</pre>
+
 0.2.1 (2019-11-01)
 ------------------
 
