@@ -15,8 +15,8 @@ def generate_version(version, prerelease=None, revision=None):
 
 
 __title__ = "nbcommands"
-__description__ = "Shell commands for Jupyter notebooks!"
-__url__ = "https://github.com/vinayak-mehta/nbshell"
+__description__ = "Unix commands for Jupyter notebooks!"
+__url__ = "https://github.com/vinayak-mehta/nbcommands"
 __version__ = generate_version(VERSION, prerelease=PRERELEASE, revision=REVISION)
 __author__ = "Vinayak Mehta"
 __author_email__ = "vmehta94@gmail.com"

@@ -13,7 +13,7 @@ with open("README.md", "r") as f:
     readme = f.read()
 
 
-requires = []
+requires = ["Click==7.0", "colorama==0.4.1", "nbformat==4.4.0", "Pygments==2.4.2"]
 dev_requires = ["Sphinx==2.2.1"]
 dev_requires = dev_requires + requires
 
@@ -32,7 +32,15 @@ def setup_package():
         packages=find_packages(exclude=("tests",)),
         install_requires=requires,
         extras_require={"dev": dev_requires},
-        entry_points={},
+        entry_points={
+            "console_scripts": [
+                "nbtouch = nbcommands._touch:touch",
+                "nbgrep = nbcommands._grep:grep",
+                "nbhead = nbcommands._head:head",
+                "nbtail = nbcommands._tail:tail",
+                "nbcat = nbcommands._cat:cat",
+            ]
+        },
         classifiers=[
             # Trove classifiers
             # Full list: https://pypi.python.org/pypi?%3Aaction=list_classifiers
