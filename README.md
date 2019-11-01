@@ -4,6 +4,8 @@ Unix commands for Jupyter notebooks!
 
 ## Why nbcommands?
 
+nbcommands bring the goodness of Unix commands to Jupyter notebooks.
+
 ## Installation
 
 You can simply use pip to install nbcommands:
@@ -18,29 +20,34 @@ $ pip install nbcommands
 
     <pre>
     $ nbtouch notebook1.ipynb notebook2.ipynb</pre>
+    ![nbtouch](docs/_static/nbtouch.png)
 
 - `nbgrep`: Search for a pattern in Jupyter notebooks.
 
     <pre>
     $ nbgrep "import os" notebook.ipynb</pre>
+    ![nbgrep](docs/_static/nbgrep.png)
 
 - `nbhead`: Print the first 5 cells of a Jupyter notebook to standard output.
 
     <pre>
     $ nbhead notebook.ipynb
     $ nbhead -n 10 notebook.ipynb</pre>
+    ![nbhead](docs/_static/nbhead.png)
 
 - `nbtail`: Print the last 5 cells of a Jupyter notebook to standard output.
 
     <pre>
     $ nbtail notebook.ipynb
     $ nbtail -n 10 notebook.ipynb</pre>
+    ![nbtail](docs/_static/nbtail.png)
 
 - `nbcat`: Concatenate Jupyter notebooks to standard output.
 
     <pre>
     $ nbcat notebook.ipynb
     $ nbcat notebook1.ipynb notebook2.ipynb -o notebook3.ipynb</pre>
+    ![nbcat](docs/_static/nbcat.png)
 
 Future enhancements:
 
