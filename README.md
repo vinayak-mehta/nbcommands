@@ -25,7 +25,7 @@ $ pip install nbcommands
 - `nbgrep`: Search for a pattern in Jupyter notebooks.
 
     <pre>
-    $ nbgrep "import os" notebook.ipynb</pre>
+    $ nbgrep "os" notebook.ipynb</pre>
     ![nbgrep](docs/_static/nbgrep.png)
 
 - `nbhead`: Print the first 5 cells of a Jupyter notebook to standard output.
