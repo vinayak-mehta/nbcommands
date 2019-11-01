@@ -10,7 +10,9 @@ You can simply use pip to install nbcommands:
 $ pip install nbcommands
 </pre>
 
-## Features
+## Usage
+
+nbcommands gives you the following commands to interact with your Jupyter notebooks.
 
 - `nbtouch`: Update the access and modification times of each Jupyter notebook to the current time.
 
