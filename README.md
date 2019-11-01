@@ -58,6 +58,8 @@ nbcommands gives you the following commands to interact with your Jupyter notebo
     <pre>
     $ nbcat notebook1.ipynb notebook2.ipynb -o notebook3.ipynb</pre>
 
+And some non-Unix goodness,
+
 - `nbblack`: Blacken Jupyter notebooks.
 
     <pre>
@@ -66,7 +68,6 @@ nbcommands gives you the following commands to interact with your Jupyter notebo
 
 Future enhancements:
 
-- `nbblack`: Blacken each cell in Jupyter notebooks.
 - `nbstrip`: Strip outputs from Jupyter notebooks.
 - `nbecho`: Add a code cell to a Jupyter notebook.
 - `nbdiff`: Find the diff between two Jupyter notebooks.
