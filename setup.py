@@ -46,6 +46,7 @@ def setup_package():
                 "nbhead = nbcommands._head:head",
                 "nbtail = nbcommands._tail:tail",
                 "nbcat = nbcommands._cat:cat",
+                "nbless = nbcommands._less:less"
             ]
         },
         classifiers=[
