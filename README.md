@@ -71,6 +71,7 @@ Future enhancements:
 - `nbstrip`: Strip outputs from Jupyter notebooks.
 - `nbecho`: Add a code cell to a Jupyter notebook.
 - `nbdiff`: Find the diff between two Jupyter notebooks.
+- `nbless`: Print Jupyter notebook using a pager.
 - `nbtime`: Run and time a Jupyter notebook.
 - `nbwc`: Print word count for a Jupyter notebook.
 
