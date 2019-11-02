@@ -17,7 +17,7 @@ def display(cells):
         prompt = (
             Fore.GREEN
             + Style.BRIGHT
-            + "In [{}]: ".format(execution_count)
+            + "# In [{}]: \n".format(execution_count)
             + Style.RESET_ALL
         )
         code = highlight(cell.source, PythonLexer(), TerminalTrueColorFormatter())
