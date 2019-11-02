@@ -47,10 +47,9 @@ def _black(ctx, *args, **kwargs):
                 black_source = re.sub("^#%", "%", black_source, flags=re.M)
                 black_source = re.sub("^#!", "!", black_source, flags=re.M)
                 black_source = black_source.strip()
-                cell.source = black_source
-
-                if source != black_source:
+                if cell.source != black_source:
                     black_flag = True
+                cell.source = black_source
 
         if black_flag:
             click.echo("reformatted {}".format(file))
