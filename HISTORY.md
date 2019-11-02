@@ -4,6 +4,13 @@ Release History
 master
 ------
 
+0.3.1 (2019-11-02)
+------------------
+
+**Bugfixes**
+
+- [#9](https://github.com/vinayak-mehta/nbcommands/issues/9) nbblack does not ignore jupyter magic cell lines. Fix: [e8aa30b](https://github.com/vinayak-mehta/nbcommands/commit/e8aa30b7bc657d7c921eb633143b2a23a98c6901).
+
 0.3.0 (2019-11-02)
 ------------------
 
