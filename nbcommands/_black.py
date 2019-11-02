@@ -40,8 +40,9 @@ def _black(ctx, *args, **kwargs):
         # Source: https://neuralcoder.science/Black-Jupyter/
         for cell in _cells(nb):
             if cell.cell_type == "code":
-                source = re.sub("^%", "#%", cell.source, flags=re.M)
-                source = re.sub("^!", "#!", cell.source, flags=re.M)
+                source = cell.source
+                source = re.sub("^%", "#%", source, flags=re.M)
+                source = re.sub("^!", "#!", source, flags=re.M)
                 black_source = black.format_str(source, mode=black.FileMode())
                 black_source = re.sub("^#%", "%", black_source, flags=re.M)
                 black_source = re.sub("^#!", "!", black_source, flags=re.M)
