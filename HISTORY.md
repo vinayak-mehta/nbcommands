@@ -4,6 +4,13 @@ Release History
 master
 ------
 
+0.3.2 (2019-11-02)
+------------------
+
+**Bugfixes**
+
+- Fix black source check. Fix: [1d49970](https://github.com/vinayak-mehta/nbcommands/commit/1d4997076df3cd799e28cc9dcb94ef597dadd940).
+
 0.3.1 (2019-11-02)
 ------------------
 
