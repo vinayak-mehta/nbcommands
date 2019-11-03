@@ -19,8 +19,8 @@ def cat(ctx, *args, **kwargs):
     # Source: https://github.com/jbn/nbmerge
     merged, metadata = None, []
 
-    for file in kwargs["file"]:
-        with open(file, "r") as f:
+    for fin in kwargs["file"]:
+        with open(fin, "r") as f:
             nb = nbformat.read(f, as_version=4)
 
         metadata.append(nb.metadata)
@@ -35,7 +35,7 @@ def cat(ctx, *args, **kwargs):
         merged_metadata.update(meta)
     merged.metadata = merged_metadata
 
-    if kwargs["output"] is not None:
+    if kwargs["output"]:
         with open(kwargs["output"], "w") as f:
             nbformat.write(merged, f, version=4)
     else:

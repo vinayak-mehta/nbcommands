@@ -2,31 +2,11 @@
 
 import re
 
+from ansimarkup import parse as ansi
 import click
 import nbformat
-from colorama import Fore, Style
 
 from . import __version__
-
-
-def color(s, c, style="bright"):
-    color_map = {
-        "black": Fore.BLACK,
-        "red": Fore.RED,
-        "green": Fore.GREEN,
-        "yellow": Fore.YELLOW,
-        "blue": Fore.BLUE,
-        "magenta": Fore.MAGENTA,
-        "cyan": Fore.CYAN,
-        "white": Fore.WHITE,
-    }
-    style_map = {
-        "dim": Style.DIM,
-        "normal": Style.NORMAL,
-        "bright": Style.BRIGHT,
-    }
-
-    return color_map[c] + style_map[style] + s + Style.RESET_ALL
 
 
 @click.command(name="nbgrep")
@@ -38,8 +18,8 @@ def grep(ctx, *args, **kwargs):
     """Search for a pattern in Jupyter notebooks."""
     pattern = kwargs["pattern"]
 
-    for file in kwargs["file"]:
-        with open(file, "r") as f:
+    for fin in kwargs["file"]:
+        with open(fin, "r") as f:
             nb = nbformat.read(f, as_version=4)
 
         for cell_n, cell in enumerate(nb.cells):
@@ -47,13 +27,13 @@ def grep(ctx, *args, **kwargs):
                 search = re.search(pattern, line)
                 if search is not None:
                     first, last = search.span()
-                    match = color(line[first:last], "red")
+                    match = ansi(f"<red>{line[first:last]}</red>")
                     click.echo(
-                        color(":", "cyan").join(
+                        ansi("<cyan>:</cyan>").join(
                             [
-                                color(file, "white", style="normal"),
-                                color("cell {}".format(cell_n + 1), "green"),
-                                color("line {}".format(line_n + 1), "green"),
+                                ansi(f"<white>{fin}</white>"),
+                                ansi(f"<green>cell {cell_n+1}</green>"),
+                                ansi(f"<green>line {line_n+1}</green>"),
                                 line.replace(pattern, match),
                             ]
                         )
