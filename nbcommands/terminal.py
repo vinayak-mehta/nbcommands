@@ -19,7 +19,6 @@ def display(cells):
         code = highlight(
             cell.source, LEXER_MAP[cell.cell_type], TerminalTrueColorFormatter()
         )
-        output.append(prompt)
-        output.append(code)
+        output.append(prompt + code)
 
     return output
