@@ -7,6 +7,8 @@ from pygments.lexers import PythonLexer
 from pygments.lexers.markup import MarkdownLexer
 from pygments.formatters import TerminalTrueColorFormatter
 
+LEXER_MAP = {"markdown": MarkdownLexer(), "code": PythonLexer()}
+
 
 def display(cells):
     output = []
@@ -14,10 +16,10 @@ def display(cells):
     for cell in cells:
         execution_count = cell.get("execution_count") or " "
         prompt = ansi(f"<green>In [{execution_count}]</green>: ")
-        if cell.cell_type == "markdown":
-            code = highlight(cell.source, MarkdownLexer(), TerminalTrueColorFormatter())
-        else:
-            code = highlight(cell.source, PythonLexer(), TerminalTrueColorFormatter())
-        output.append(prompt + code)
+        code = highlight(
+            cell.source, LEXER_MAP[cell.cell_type], TerminalTrueColorFormatter()
+        )
+        output.append(prompt)
+        output.append(code)
 
     return output
