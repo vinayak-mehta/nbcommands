@@ -37,19 +37,22 @@ def _black(ctx, *args, **kwargs):
             nb = nbformat.read(f, as_version=4)
 
         black_flag = False
+        pinfo_flag = False
+        pattern = re.compile("^\?")
         # Source: https://neuralcoder.science/Black-Jupyter/
         for cell in _cells(nb):
             if cell.cell_type == "code":
                 source = cell.source
                 source = re.sub("^%", "#%", source, flags=re.M)
                 source = re.sub("^!", "#!", source, flags=re.M)
-                source = re.sub("^??", "#??", source, flags=re.M)
-                source = re.sub("^?", "#?", source, flags=re.M)
+                if pattern.match(source):
+                    pinfo_flag = True
+                    source = "#" + source
                 black_source = black.format_str(source, mode=black.FileMode())
                 black_source = re.sub("^#%", "%", black_source, flags=re.M)
                 black_source = re.sub("^#!", "!", black_source, flags=re.M)
-                black_source = re.sub("^#??", "??", black_source, flags=re.M)
-                black_source = re.sub("^#?", "?", black_source, flags=re.M)
+                if pinfo_flag:
+                    black_source = black_source[1:]
                 black_source = black_source.strip()
                 if cell.source != black_source:
                     black_flag = True
