@@ -43,9 +43,13 @@ def _black(ctx, *args, **kwargs):
                 source = cell.source
                 source = re.sub("^%", "#%", source, flags=re.M)
                 source = re.sub("^!", "#!", source, flags=re.M)
+                source = re.sub("^??", "#??", source, flags=re.M)
+                source = re.sub("^?", "#?", source, flags=re.M)
                 black_source = black.format_str(source, mode=black.FileMode())
                 black_source = re.sub("^#%", "%", black_source, flags=re.M)
                 black_source = re.sub("^#!", "!", black_source, flags=re.M)
+                black_source = re.sub("^#??", "??", black_source, flags=re.M)
+                black_source = re.sub("^#?", "?", black_source, flags=re.M)
                 black_source = black_source.strip()
                 if cell.source != black_source:
                     black_flag = True
