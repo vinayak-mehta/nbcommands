@@ -11,9 +11,10 @@ def display(cells):
     output = []
 
     for cell in cells:
-        execution_count = (
-            cell["execution_count"] if cell["execution_count"] is not None else " "
-        )
+        try:
+            execution_count = cell["execution_count"]
+        except KeyError:
+            execution_count = " "
         prompt = (
             Fore.GREEN
             + Style.BRIGHT
