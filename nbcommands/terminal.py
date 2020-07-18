@@ -14,7 +14,8 @@ def display(cells):
         prompt = ""
         # TODO: show more cell types
         if cell["cell_type"] == "code":
-            execution_count = cell.get("execution_count", " ")
+            execution_count = cell.get("execution_count")
+            execution_count = execution_count and execution_count or " "
             prompt = (
                 Fore.GREEN
                 + Style.BRIGHT
