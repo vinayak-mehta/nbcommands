@@ -11,15 +11,17 @@ def display(cells):
     output = []
 
     for cell in cells:
-        execution_count = (
-            cell["execution_count"] if cell["execution_count"] is not None else " "
-        )
-        prompt = (
-            Fore.GREEN
-            + Style.BRIGHT
-            + "In [{}]: ".format(execution_count)
-            + Style.RESET_ALL
-        )
+        prompt = ""
+        # TODO: show more cell types
+        if cell["cell_type"] == "code":
+            execution_count = cell.get("execution_count")
+            execution_count = execution_count and execution_count or " "
+            prompt = (
+                Fore.GREEN
+                + Style.BRIGHT
+                + "In [{}]: ".format(execution_count)
+                + Style.RESET_ALL
+            )
         code = highlight(cell.source, PythonLexer(), TerminalTrueColorFormatter())
         output.append(prompt + code)
 
