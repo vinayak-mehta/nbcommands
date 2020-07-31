@@ -28,6 +28,10 @@ You can simply use pip to install nbcommands::
 
     $ pip install nbcommands
 
+or conda::
+
+    $ conda install -c conda-forge nbcommands
+
 Usage
 -----
 

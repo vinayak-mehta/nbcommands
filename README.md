@@ -16,6 +16,12 @@ You can simply use pip to install nbcommands:
 $ pip install nbcommands
 </pre>
 
+or conda:
+
+<pre>
+$ conda install -c conda-forge nbcommands
+</pre>
+
 ## Usage
 
 nbcommands installs the following commands which let you interact with your Jupyter notebooks without spinning up a notebook server.
