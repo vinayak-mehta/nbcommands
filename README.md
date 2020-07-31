@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="https://raw.githubusercontent.com/vinayak-mehta/conrad/master/docs/_static/nbcommands.png" width="200">
+   <img src="https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbcommands.png" width="200">
 </p>
 
 # nbcommands
