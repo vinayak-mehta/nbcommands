@@ -1,6 +1,10 @@
+<p align="center">
+   <img src="https://raw.githubusercontent.com/vinayak-mehta/conrad/master/docs/_static/nbcommands.png" width="200">
+</p>
+
 # nbcommands
 
-[![image](https://img.shields.io/pypi/v/nbcommands.svg)](https://pypi.org/project/nbcommands/) [![image](https://img.shields.io/pypi/pyversions/nbcommands.svg)](https://pypi.org/project/nbcommands/) [![image](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+[![image](https://readthedocs.org/projects/nbcommands/badge/?version=latest)](https://nbcommands.readthedocs.io/en/latest/) [![image](https://img.shields.io/pypi/v/nbcommands.svg)](https://pypi.org/project/nbcommands/) [![image](https://img.shields.io/pypi/pyversions/nbcommands.svg)](https://pypi.org/project/nbcommands/) [![image](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
 nbcommands bring the goodness of Unix commands to Jupyter notebooks.
 
@@ -14,7 +18,7 @@ $ pip install nbcommands
 
 ## Usage
 
-nbcommands gives you the following commands to interact with your Jupyter notebooks without spinning up a notebook server.
+nbcommands installs the following commands which let you interact with your Jupyter notebooks without spinning up a notebook server.
 
 - `nbtouch`: Update the access and modification times of each Jupyter notebook to the current time.
 
@@ -71,6 +75,8 @@ And some non-Unix goodness,
     <pre>
     $ nbblack notebook1.ipynb notebook2.ipynb</pre>
     ![nbblack](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbblack.gif)
+
+---
 
 Planned enhancements:
 

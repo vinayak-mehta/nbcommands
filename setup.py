@@ -14,13 +14,13 @@ with open("README.md", "r") as f:
 
 
 requires = [
-    "black==19.10b0",
-    "Click==7.0",
-    "colorama==0.4.1",
-    "nbformat==4.4.0",
-    "Pygments==2.4.2",
+    "black>=19.10b0",
+    "Click>=7.0",
+    "colorama>=0.4.1",
+    "nbformat>=4.4.0",
+    "Pygments>=2.4.2",
 ]
-dev_requires = ["Sphinx==2.2.1"]
+dev_requires = ["Sphinx>=2.2.1"]
 dev_requires = dev_requires + requires
 
 
