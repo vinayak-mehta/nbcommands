@@ -4,6 +4,18 @@ Release History
 master
 ------
 
+0.4.0 (2020-08-01)
+------------------
+
+**Improvements**
+
+- [#3](https://github.com/vinayak-mehta/nbcommands/issues/3) Add nbless. [#4](https://github.com/vinayak-mehta/nbcommands/pull/4) by [Deepu Thomas Philip](https://github.com/deepu-tp).
+- Add Sphinx docs!
+
+**Bugfixes**
+
+- [#19](https://github.com/vinayak-mehta/nbcommands/issues/19) Fix KeyError when execution count is None. [#21](https://github.com/vinayak-mehta/nbcommands/pull/21) by Vinayak Mehta.
+
 0.3.2 (2019-11-02)
 ------------------
 

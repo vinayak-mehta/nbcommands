@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-VERSION = (0, 3, 2)
+VERSION = (0, 4, 0)
 PRERELEASE = None  # alpha, beta or rc
 REVISION = None
 
@@ -15,7 +15,7 @@ def generate_version(version, prerelease=None, revision=None):
 
 
 __title__ = "nbcommands"
-__description__ = "Unix commands for Jupyter notebooks!"
+__description__ = "Unix commands for Jupyter notebooks."
 __url__ = "https://github.com/vinayak-mehta/nbcommands"
 __version__ = generate_version(VERSION, prerelease=PRERELEASE, revision=REVISION)
 __author__ = "Vinayak Mehta"
