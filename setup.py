@@ -46,7 +46,7 @@ def setup_package():
                 "nbhead = nbcommands._head:head",
                 "nbtail = nbcommands._tail:tail",
                 "nbcat = nbcommands._cat:cat",
-                "nbless = nbcommands._less:less"
+                "nbless = nbcommands._less:less",
             ]
         },
         classifiers=[
@@ -55,6 +55,7 @@ def setup_package():
             "License :: OSI Approved :: Apache Software License",
             "Programming Language :: Python :: 3.6",
             "Programming Language :: Python :: 3.7",
+            "Programming Language :: Python :: 3.8",
         ],
     )
 
