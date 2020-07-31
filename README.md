@@ -20,19 +20,19 @@ nbcommands gives you the following commands to interact with your Jupyter notebo
 
     <pre>
     $ nbtouch notebook1.ipynb notebook2.ipynb</pre>
-    ![nbtouch](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbtouch.png)
+    ![nbtouch](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbtouch.gif)
 
 - `nbgrep`: Search for a pattern in Jupyter notebooks.
 
     <pre>
     $ nbgrep "os" notebook1.ipynb notebook2.ipynb</pre>
-    ![nbgrep](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbgrep.png)
+    ![nbgrep](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbgrep.gif)
 
 - `nbhead`: Print the first 5 cells of a Jupyter notebook to standard output.
 
     <pre>
     $ nbhead notebook1.ipynb</pre>
-    ![nbhead](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbhead.png)
+    ![nbhead](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbhead.gif)
 
     Note: You can also specify the number of cells you want to print using the `-n` option.
     <pre>
@@ -42,7 +42,7 @@ nbcommands gives you the following commands to interact with your Jupyter notebo
 
     <pre>
     $ nbtail notebook2.ipynb</pre>
-    ![nbtail](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbtail.png)
+    ![nbtail](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbtail.gif)
 
     Note: You can also specify the number of cells you want to print using the `-n` option.
     <pre>
@@ -52,11 +52,17 @@ nbcommands gives you the following commands to interact with your Jupyter notebo
 
     <pre>
     $ nbcat notebook1.ipynb notebook2.ipynb</pre>
-    ![nbcat](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbcat.png)
+    ![nbcat](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbcat.gif)
 
     Note: You can create a new notebook by concatenating multiple notebooks using the `-o` option.
     <pre>
     $ nbcat notebook1.ipynb notebook2.ipynb -o notebook3.ipynb</pre>
+
+- `nbless`: Print a Jupyter notebook using a pager program.
+
+    <pre>
+    $ nbless notebook1.ipynb</pre>
+    ![nbless](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbless.gif)
 
 And some non-Unix goodness,
 
@@ -64,15 +70,14 @@ And some non-Unix goodness,
 
     <pre>
     $ nbblack notebook1.ipynb notebook2.ipynb</pre>
-    ![nbblack](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbblack.png)
+    ![nbblack](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbblack.gif)
 
-Future enhancements:
+Planned enhancements:
 
 - `nbstrip`: Strip outputs from Jupyter notebooks.
 - `nbdiff`: Find the diff between two Jupyter notebooks.
 - `nbecho`: Add a code cell to a Jupyter notebook.
 - `nbedit`: Interactively edit a Jupyter notebook.
-- `nbless`: Print Jupyter notebook using a pager.
 - `nbtime`: Run and time a Jupyter notebook.
 - `nbwc`: Print word count for a Jupyter notebook.
 
