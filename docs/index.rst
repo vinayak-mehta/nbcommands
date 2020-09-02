@@ -40,7 +40,8 @@ nbcommands installs the following commands which let you interact with your Jupy
 nbtouch
 ^^^^^^^
 
-Update the access and modification times of each Jupyter notebook to the current time::
+Update the access and modification times of each Jupyter notebook to the current time,
+or create empty notebook files where none exist::
 
     $ nbtouch notebook1.ipynb notebook2.ipynb
 
