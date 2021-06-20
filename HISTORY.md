@@ -4,6 +4,13 @@ Release History
 master
 ------
 
+0.5.0 (2021-06-21)
+------------------
+
+**Improvements**
+
+- Support directories in nbgrep. [#26](https://github.com/vinayak-mehta/nbcommands/pull/26) by [Min RK](https://github.com/minrk).
+
 0.4.0 (2020-08-01)
 ------------------
 

@@ -53,6 +53,7 @@ nbgrep
 Search for a pattern in Jupyter notebooks::
 
     $ nbgrep "os" notebook1.ipynb notebook2.ipynb
+    $ nbgrep "os" directory/
 
 .. image:: _static/nbgrep.gif
 

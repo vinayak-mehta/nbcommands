@@ -35,7 +35,8 @@ nbcommands installs the following commands which let you interact with your Jupy
 - `nbgrep`: Search for a pattern in Jupyter notebooks.
 
     <pre>
-    $ nbgrep "os" notebook1.ipynb notebook2.ipynb</pre>
+    $ nbgrep "os" notebook1.ipynb notebook2.ipynb
+    $ nbgrep "os" directory/</pre>
     ![nbgrep](https://raw.githubusercontent.com/vinayak-mehta/nbcommands/master/docs/_static/nbgrep.gif)
 
 - `nbhead`: Print the first 5 cells of a Jupyter notebook to standard output.
