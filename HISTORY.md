@@ -4,6 +4,11 @@ Release History
 master
 ------
 
+0.5.1 (2021-06-21)
+------------------
+
+- Minor documentation changes.
+
 0.5.0 (2021-06-21)
 ------------------
 
