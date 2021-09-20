@@ -3,7 +3,7 @@
 from colorama import Fore, Style
 
 from pygments import highlight
-from pygments.lexers import PythonLexer
+from pygments.lexers import PythonLexer, MarkdownLexer
 from pygments.formatters import TerminalTrueColorFormatter
 
 
@@ -22,7 +22,12 @@ def display(cells):
                 + "In [{}]: ".format(execution_count)
                 + Style.RESET_ALL
             )
-        code = highlight(cell.source, PythonLexer(), TerminalTrueColorFormatter())
+            lexer = PythonLexer()    
+            
+        elif cell["cell_type"] == "markdown":
+            lexer = MarkdownLexer()
+            
+        code = highlight(cell.source, lexer, TerminalTrueColorFormatter())
         output.append(prompt + code)
 
     return output
