@@ -3,7 +3,7 @@
 from colorama import Fore, Style
 
 from pygments import highlight
-from pygments.lexers import PythonLexer
+from pygments.lexers import MarkdownLexer, PythonLexer, TextLexer
 from pygments.formatters import TerminalTrueColorFormatter
 
 
@@ -12,6 +12,7 @@ def display(cells):
 
     for cell in cells:
         prompt = ""
+        
         # TODO: show more cell types
         if cell["cell_type"] == "code":
             execution_count = cell.get("execution_count")
@@ -22,7 +23,15 @@ def display(cells):
                 + "In [{}]: ".format(execution_count)
                 + Style.RESET_ALL
             )
-        code = highlight(cell.source, PythonLexer(), TerminalTrueColorFormatter())
+            lexer = PythonLexer()    
+            
+        elif cell["cell_type"] == "markdown":
+            lexer = MarkdownLexer()
+           
+        else:
+            lexer = TextLexer()
+            
+        code = highlight(cell.source, lexer, TerminalTrueColorFormatter())
         output.append(prompt + code)
 
     return output
